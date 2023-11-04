@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Site Search",
+  "version": "0.1",
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to set up site search shortcuts. Behaves similar to Chrome's site search.",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "permissions": ["activeTab"],
+
+  "browser_action": {
+    "default_icon": "icons/border-48.png",
+    "default_title": "Site Search",
+    "default_popup": "overlay/overlay.html"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "site-search",
+  "version": "0.0.1",
+  "description": "Firefox plugin that mimics Chrome's site search setting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "8.0.3",
+    "lint-staged": "15.0.2",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
+  },
+  "lint-staged": {
+    "*.+(ts|tsx|js)": [
+      "prettier --write",
+      "echo 'we doin it boys'"
+    ],
+    "*.+(json|css|html|md)": [
+      "prettier --write",
+      "echo 'we doin it girls'"
+    ]
+  }
+}
