@@ -4,7 +4,8 @@
   "description": "Firefox plugin that mimics Chrome's site search setting",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc && prettier build --write"
   },
   "author": "",
   "license": "ISC",
@@ -15,13 +16,8 @@
     "typescript": "5.2.2"
   },
   "lint-staged": {
-    "*.+(ts|tsx|js)": [
-      "prettier --write",
-      "echo 'we doin it boys'"
-    ],
-    "*.+(json|css|html|md)": [
-      "prettier --write",
-      "echo 'we doin it girls'"
+    "*.+(ts|tsx|js|json|css|html|md)": [
+      "prettier --write"
     ]
   }
 }
